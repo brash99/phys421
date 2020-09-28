@@ -1,5 +1,4 @@
-Velocity In Gate, Ch 1, Run #6
-Time ( s )	Velocity In Gate ( m/s )
+Time	Velocity
 0.6221	0.61
 1.6504	0.61
 2.6244	0.61
