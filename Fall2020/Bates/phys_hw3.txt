@@ -1,0 +1,33 @@
+Q1)
+	a) See notebook
+	b)	The resulting fourier spectrum shows that the frequency oscillates, with a larger range towards
+		the beginning of the graph. If you look at the power v frequency graph, you can see that the
+		power begins at a higher amount, then quickly diminishes as the frequency increases, becoming
+		a linear horizontal line situated at zero. This means that the frequency values after about 10
+		will have close to 0 power. In fact, the higher the valule for frequency, the closer it situates
+		towards zero in both the real, imaginary, and power graphs. Showing that the sound was initiallly loud
+		then proceeded to fade away.
+		If you set the number of terms in the Fourier series to a lower amount,
+		or divide N_samples by a higher amount, then the pattern becomes more distinguishable
+		and the approximation to the original signal becomes more accurate.
+		N_terms = int(N_samples/25)
+		--> Divide N_samples by 25 instead of 2 to give a better approximation
+		Nyquist frequency = 50.00 Hz
+		
+		
+Q2)	I changed the line in the code to "(1-start, (end-start+1))" to reflect the new rules given in the question.
+	Yes, the final result did suprise me. I expected the slope to be exponential and higher than the expected value. 
+	Instead, the slope was more logarithmic and was below the estimated value.
+
+Q3) The results of the poisson distribution and gaussian distribution of step size can be compared. The first two histograms,
+	which show the measured distribution of final positions after n steps of random walking around, have similar bell curve
+	shapes in both the poisson and gaussian distributions. The poisson stays positive and has higher values.
+	The walk_ditch graph was much different, the poisson distribution had one bar at zero while the gaussian had a normal 
+	distribution. The last histogram is also different, for poisson the blue line is mostly horizontal and consistent at 1,
+	while the orange line is logarithmic looking and increasing from zero. The gaussian has both lines starting at zero
+	and increasing. 
+	Yes, my answer follows the predictions of the central limit theorem. The randomness added makes the distribution
+	appear like a normal distribution.
+	The more that the nsteps and npart values are increased, the more the histogram looks like a bell curve. The optimal
+	ratio is having nparts be 10x bigger than nsteps
+	

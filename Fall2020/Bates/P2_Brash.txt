@@ -1,0 +1,28 @@
+Assignment 2
+
+Q1)
+	When the minimum x-value is constant and the maximum x-value is changed, then it generally results in lower y-intercept error.
+	When the minimum x-value is changed and the maximum x-value is constant, then the error in the y-intercept heavily increases. 
+	It can be concluded that when the minimum value of X gets far away from zero and is not constant, while the maximum is constant, then
+	the error in the y-intercept will increase.
+
+Q2)
+	Locations used: Botswana (southern), Madagascar(southern), Colombia (equator), Austria (northern), Japan (northern)
+	
+	Scale factors: Botswana - 13, Madagascar - 25, Colombia - 9, Austria - 10.5, Japan - 9
+
+	Offset: Botswana - 0.99, Madagascar - 0.999, Colombia - 0.9615, Austria - 0.975, Japan - 0.985
+	
+Q3)
+	The data values overlap, so the data is not entirely clean. To fix this, you need to edit kater_2_run7 &
+	kater_2_run8 files to clean the raw data so the time intervals are more consistent. I found the outlying
+	points and modified the values ever so slightly to separate the data that was overlapping.
+	The first value for g calculated was 9.7971 +/- 0.0048, the best value for g is 9.8025 +/- 0.1240
+	This increase in uncertainty is because there are various errors that cause g to not to be entirely accurate.
+	model leaves for a degree of error because it is not the most accurate tool for calculating g.
+	The value given has uncertainty and quite a bit, Kater's Pendulum would be the best tool for measuring
+	within a percent or two of g. In any experiment there is some degree of error or "crap that happens."
+	
+	The fudge factor offset is 0.0085, this is a bit large but reasonable because it is only 8.5 thousandths of 1, if the
+	offset had to be large enough to go in the tenths place(0.1) or hundreths place(0.01) then this would 
+	be unreasonable.
