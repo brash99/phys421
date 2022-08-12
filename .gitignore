@@ -13,4 +13,5 @@ venv/bin/*
 venv/lib/*
 venv/include/*
 venv
+WWO/tf_wx_model/*
 
