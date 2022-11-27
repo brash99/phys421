@@ -1,5 +1,0 @@
-#!/bin/bash
-export fname=$1
-cat $fname | grep Oxygen | grep sensor | grep Voltage | sed -e 's/;/ /g' | awk '{print $1 " " $8}' | sed -e 's/"//g' | sed -e 's/ /,/g' > o2_sensor_2_voltage.csv
-cat $fname | grep Oxygen | grep sensor | grep Current | sed -e 's/;/ /g' | awk '{print $1 " " $9}' | sed -e 's/"//g' | sed -e 's/ /,/g' > o2_sensor_1_current.csv
-
