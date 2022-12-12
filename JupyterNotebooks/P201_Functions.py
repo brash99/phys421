@@ -102,7 +102,7 @@ def constant_fit_plot_errors_core(xi,yi,sigmai,labelstring="Constant Fit",linest
     linestring2 = linestring+"-"
     
     init_vals = [0.0 for x in range(1)]
-    popt, pcov = curve_fit(constantfitfunction,xi,yi,p0=init_vals,sigma=sigmai)
+    popt, pcov = curve_fit(constantfitfunction,xi,yi,p0=init_vals,sigma=sigmai,absolute_sigma=True)
     perr = np.sqrt(np.diag(pcov))
 
     ps = np.random.multivariate_normal(popt,pcov,100)
@@ -255,7 +255,7 @@ def linear_fit_plot_errors_core(xi,yi,sigmai,labelstring="Linear Fit",linestring
     linestring2 = linestring+"-"
     
     init_vals = [0.0 for x in range(2)]
-    popt, pcov = curve_fit(linearfitfunction,xi,yi,p0=init_vals,sigma=sigmai)
+    popt, pcov = curve_fit(linearfitfunction,xi,yi,p0=init_vals,sigma=sigmai,absolute_sigma=True)
     perr = np.sqrt(np.diag(pcov))
 
     ps = np.random.multivariate_normal(popt,pcov,10000)
@@ -402,7 +402,7 @@ def quadratic_fit_plot_errors_core(xi,yi,sigmai,labelstring="Quadratic Fit",line
     linestring2 = linestring+"-"
     
     init_vals = [0.0 for x in range(3)]
-    popt, pcov = curve_fit(quadraticfitfunction,xi,yi,p0=init_vals,sigma=sigmai)
+    popt, pcov = curve_fit(quadraticfitfunction,xi,yi,p0=init_vals,sigma=sigmai,absolute_sigma=True)
     perr = np.sqrt(np.diag(pcov))
 
     ps = np.random.multivariate_normal(popt,pcov,10000)
