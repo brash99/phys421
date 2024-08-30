@@ -520,20 +520,3 @@ def weighted_average(x,deltax,etype):
     
     return xbar,delta_xbar_stat,delta_xbar_syst,delta_xbar
 
-def set_dark_mode(dark_mode = True):
-    """
-    set_dark_mode(dark_mode = True)
-    
-    Turns on/off dark mode!
-    
-    Arguments:
-        dark_mode: boolean -> True or False
-    Returns
-        Nothing!
-    """
-    if (dark_mode):
-        from jupyterthemes import jtplot
-        jtplot.style(theme='monokai', context='notebook', ticks=True, grid=False)
-        linecolor = 'w'
-    else:
-        linecolor = 'k'
