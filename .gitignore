@@ -10,6 +10,8 @@ JupyterNotebooks/WeatherPrediction/.ipynb_checkpoints/*
 Untitled*.ipynb
 __pycache__/*
 JupyterNotebooks/__pycache__/*
+JupyterNotebooks/KaterPendulum/__pycache__/*
+JupyterNotebooks/RegularPendulum/__pycache__/*
 Fall2020/*
 AssignmentSolutions/final/*
 venv/*
